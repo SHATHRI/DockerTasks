@@ -1,0 +1,14 @@
+version: '3.8'
+
+
+services: 
+  joey:
+    image: httpd:latest
+    container_name: joey
+    ports:
+      - 8080:80
+    networks: 
+      - pvt_net1
+networks: 
+  pvt_net1:
+    
